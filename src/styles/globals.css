@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --max-content: 1024px;
+
+  --white: #fff;
+  --black: #000;
+  --color_emphasis: #f9db79;
+
+  --cards-shadow: #d9dde1;
+  --text-shadow: #474747;
+}
+
 body {
   font-family: var(--font-poppins);
 }
