@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import HeaderTop from "@/components/HeaderTop";
 
 export const metadata = {
   title: "Gelateria",
@@ -8,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <HeaderTop />
+        {children}
+      </body>
     </html>
   );
 }
