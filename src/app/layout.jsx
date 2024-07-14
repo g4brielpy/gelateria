@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import HeaderTop from "@/components/HeaderTop";
+import { poppins } from "@/lib/fonts";
 
 export const metadata = {
   title: "Gelateria",
@@ -9,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body>
+      <body className={poppins.variable}>
         <HeaderTop />
         {children}
       </body>
