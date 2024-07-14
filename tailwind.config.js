@@ -12,11 +12,16 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      screens: {
+        "2xl": "1280px",
+      },
     },
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
+        DEFAULT: "0.8rem",
+        md: "1rem",
+        lg: "1.2rem",
       },
     },
   },
