@@ -7,15 +7,15 @@ export default function Home() {
         className="
           w-full h-screen relative
           bg-no-repeat bg-center bg-auto bg-emphasis
+          bg-[url('/banner-home.png')]
           flex items-center justify-center
         "
-        style={{ backgroundImage: "url('/banner-home.png')" }}
       >
         <h1 className="text-white font-extrabold text-7xl drop-shadow-lg">
           Sorvete Artesanal
         </h1>
       </section>
-      <main className="container ">
+      <main className="mx-auto max-w-[1440px]">
         <CardsHome
           titulo="Nossos Sabores"
           subTitulo="Novos e deliciosos!"
@@ -46,6 +46,21 @@ export default function Home() {
             alt: "Image Sabores Sorvetes",
           }}
           isReverse={true}
+        />
+
+        <CardsHome
+          titulo="Sobre Nós"
+          subTitulo="Alegria em cada casquinha!"
+          sobre="
+            Venha tomar o melhor sorvete da região aqui com a gente! Nós 
+            estamos há anos no mercado produzindo o que tem de melhor para o 	
+            nosso cliente e você não pode ficar fora dessa. Venha nos fazer uma 
+            visita e aproveite o melhor atendimento e o melhor sorvete da cidade.
+          "
+          img={{
+            src: "/sobre-image.jpg",
+            alt: "Image Sabores Sorvetes",
+          }}
         />
       </main>
     </>
