@@ -1,17 +1,17 @@
-import { CardsHome } from "@/components/CardsHome";
+import CardsHome from "@/components/CardsHome";
 
 export default function Home() {
   return (
     <>
       <section
         className="
-          w-full h-screen relative
+          w-full h-screen
           bg-no-repeat bg-center bg-auto bg-emphasis
           bg-[url('/banner-home.png')]
           flex items-center justify-center
         "
       >
-        <h1 className="text-white font-extrabold text-7xl drop-shadow-lg">
+        <h1 className="text-white text-center font-extrabold text-7xl drop-shadow-lg">
           Sorvete Artesanal
         </h1>
       </section>
