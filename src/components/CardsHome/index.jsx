@@ -35,8 +35,12 @@ export default function CardsHome({
             flex-col justify-center items-center
           "
       >
-        <h2 className="text-3xl font-bold mb-6 drop-shadow-md">{titulo}</h2>
-        <h3 className="text-lg font-semibold italic mb-4">{subTitulo}</h3>
+        <h2 className="text-3xl font-bold uppercase mb-6 text-gray-900 drop-shadow-sm">
+          {titulo}
+        </h2>
+        <h3 className="text-lg font-semibold italic text-gray-900 mb-4">
+          {subTitulo}
+        </h3>
         <p className="text-sm font-light text-gray-900 leading-6 max-w-[500px]">
           {sobre}
         </p>
