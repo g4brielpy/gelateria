@@ -37,7 +37,8 @@ export default function index() {
           />
         </div>
       </div>
-      <div className="copy text-center py-4 px-4 bg-neutral-950/90">
+
+      <div className="text-center py-4 px-4 bg-neutral-950/90">
         <p>
           &copy; Gelateria 2024 - Desenvolvido por{" "}
           <Link
