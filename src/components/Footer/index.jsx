@@ -2,11 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Card from "./Card";
 
-export default function index() {
+export default function Footer() {
   return (
     <footer className="bg-black text-white">
-      <div className="container py-16 flex justify-center items-center flex-wrap gap-4">
-        <div>
+      <div
+        className="
+          container py-16 
+          flex flex-col justify-center items-center flex-wrap gap-4
+          "
+      >
+        <div className="w-fit">
           <Image
             src="/logo.png"
             alt="Logo Gelateria"
@@ -14,13 +19,8 @@ export default function index() {
             height="100"
           />
         </div>
-        <div
-          className="
-            min-w-[600px] 
-            flex flex-auto
-             flex-wrap gap-4
-            "
-        >
+
+        <div className="w-full flex flex-wrap gap-4">
           <Card
             titulo="Endereço"
             contatos={[
