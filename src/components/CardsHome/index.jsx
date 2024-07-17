@@ -10,13 +10,13 @@ export default function CardsHome({
   return (
     <div
       className={`
-        flex flex-row flex-wrap 
-        ${isReverse && "flex-row-reverse"}
+        flex flex-col flex-wrap lg:flex-row
+        ${isReverse && "lg:flex-row-reverse"}
       `}
     >
       <div
         className="
-          min-w-[500px] w-1/2 h-[400px]
+          w-full lg:w-1/2 min-w-[200px] h-[400px]
           flex-auto
           "
       >
@@ -30,7 +30,7 @@ export default function CardsHome({
       </div>
       <div
         className="
-          min-w-[500px] w-1/2 h-[400px] 
+          w-full lg:w-1/2 min-w-[200px] h-[400px] p-8
           text-center flex-auto flex
             flex-col justify-center items-center
           "
