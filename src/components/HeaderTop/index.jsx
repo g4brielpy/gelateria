@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-white h-20 w-full flex items-center">
+    <header className="bg-white sm:h-20 w-full flex items-center">
       <div
         className="
         container
         flex 
-          items-center justify-between flex-wrap gap-4"
+          items-center flex-col sm:flex-row justify-center sm:justify-between flex-wrap gap-4"
       >
         <div>
           <Image
@@ -19,7 +19,13 @@ export default function Header() {
             className="object-cover"
           />
         </div>
-        <nav className="space-x-6 font-bold">
+        <nav
+          className="
+            pt-6 pb-4 w-full sm:w-fit font-bold
+            sm:border-none border-t-2 border-solid border-neutral-950/20
+            flex justify-around sm:justify-center gap-6
+            "
+        >
           <Link href="/">Home</Link>
           <Link href="/">Sabores</Link>
           <Link href="/">Sobre</Link>
