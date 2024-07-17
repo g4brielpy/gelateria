@@ -27,8 +27,8 @@ export default function Header() {
             "
         >
           <Link href="/">Home</Link>
-          <Link href="/">Sabores</Link>
-          <Link href="/">Sobre</Link>
+          <Link href="sabores/">Sabores</Link>
+          <Link href="sobre/">Sobre</Link>
         </nav>
       </div>
     </header>
