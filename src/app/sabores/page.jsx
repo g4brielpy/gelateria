@@ -15,6 +15,11 @@ export default function page() {
           Sorvete Artesanal
         </h1>
       </section>
+      <main className="container py-12 bg-slate-700">
+        <h2 className="uppercase text-center text-2xl sm:text-3xl md:text-4xl font-semibold">
+          Sabores de Sorvete
+        </h2>
+      </main>
     </>
   );
 }
