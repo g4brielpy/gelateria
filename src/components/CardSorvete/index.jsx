@@ -1,20 +1,25 @@
 import Image from "next/image";
 
-export default function CardSorvete() {
+export default function CardSorvete({
+  titulo = "",
+  descricao = "",
+  img = { src: "", alt: "" },
+}) {
   return (
     <div
       className="
           bg-gray-100/5 rounded-md shadow-md
-          w-[300px] p-4 text-center
+          w-full md:max-w-[350px]
+          p-4 text-center
           flex-auto flex 
             flex-col items-center"
     >
       <div className="h-[300px] flex justify-center">
         <Image
-          src="/sabor-oreo.png"
-          alt="Image sabor Oreo"
+          src={img.src}
+          alt={img.alt}
           width="500"
-          height="200"
+          height="500"
           className="object-cover flex-auto"
         />
       </div>
@@ -25,11 +30,9 @@ export default function CardSorvete() {
             border-t-2 border-solid border-gray-400/40
             "
         >
-          Sorvete de Oreo
+          {titulo}
         </h3>
-        <small className="md:text-sm text-gray-900">
-          Delicioso sorvete sabor Oreo. Uma explosão de sabor.
-        </small>
+        <small className="md:text-sm text-gray-900">{descricao}</small>
       </div>
     </div>
   );
