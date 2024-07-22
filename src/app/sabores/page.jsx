@@ -30,13 +30,55 @@ export default function page() {
         >
           Sabores de Sorvete
         </h2>
-        <div className="flex flex-col flex-wrap md:flex-row gap-4">
-          <CardSorvete />
-          <CardSorvete />
-          <CardSorvete />
-          <CardSorvete />
-          <CardSorvete />
-          <CardSorvete />
+        <div className="flex flex-col flex-wrap items-center md:flex-row md:justify-center gap-4">
+          <CardSorvete
+            titulo="Sorvete de Oreo"
+            descricao="Delicioso sorvete sabor Oreo. Uma explosão de sabor."
+            img={{
+              src: "/sabor-oreo.png",
+              alt: "Image sabor Oreo",
+            }}
+          />
+          <CardSorvete
+            titulo="Sorvete Pistache"
+            descricao="Cremoso sorvete sabor pistache com pedacinhos de semente."
+            img={{
+              src: "/sabor-pistache.png",
+              alt: "Image sabor pistache",
+            }}
+          />
+          <CardSorvete
+            titulo="Sorvete Cookies & Avelã"
+            descricao="O nosso melhor sorvete. Você vai adorar o sabor."
+            img={{
+              src: "/sabor-cookies-avela.png",
+              alt: "Image sabor cookies avela",
+            }}
+          />
+          <CardSorvete
+            titulo="Sorvete de Kiwi"
+            descricao="Delicioso e refrescante sorvete sabor kiwi. Rico em vitamina C."
+            img={{
+              src: "/sabor-kiwi.png",
+              alt: "Image sabor kiwi",
+            }}
+          />
+          <CardSorvete
+            titulo="Sorvete de Morango"
+            descricao="Sorvete de morango gourmet. Tradicional e saboroso."
+            img={{
+              src: "/sabor-morango.png",
+              alt: "Image sabor morango",
+            }}
+          />
+          <CardSorvete
+            titulo="Sorvete de Limão Siciliano"
+            descricao="O incrivel sorvete gourmet de limão siciliano vai te encantar."
+            img={{
+              src: "/sabor-limao.png",
+              alt: "Image sabor limao",
+            }}
+          />
         </div>
       </main>
     </>
